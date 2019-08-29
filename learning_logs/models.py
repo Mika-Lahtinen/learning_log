@@ -22,4 +22,8 @@ class Entry(models.Model):
 
     def __str__(self):
         """Return to the texts"""
-        return self.text[:50] + "..."
+        if len(str(self.text)) > 50:
+            return '{}...'.format(str(self.text[:50]))
+        else:
+            return self.text
+        
