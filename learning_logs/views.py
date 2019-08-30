@@ -10,4 +10,4 @@ def topics(request):
     """Get topics"""
     topics = Topic.objects.order_by('date_added')
     context = {'topics': topics}
-    return render(request, 'larning_logs/topics.html', context)
+    return render(request, 'learning_logs/topics.html', context)
