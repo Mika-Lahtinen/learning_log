@@ -1,17 +1,17 @@
 {% extends 'learning_logs/base.html' %}
 
-{% block context %}
+{% block content %}
 
 <p>Topics</p>
 
 <ul>
     {% for topic in topics %}
         <li>
-            <a href="{% url 'learning_logs:topic' topic.id %}">{{ topic }}</a>
+            {{ topic }}
         </li>
     {% empty %}
         <li>No topics to show.</li>
     {% endfor %}
 </ul>
 
-{% endblock context %}
+{% endblock content %}
