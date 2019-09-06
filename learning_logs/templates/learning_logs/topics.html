@@ -7,7 +7,7 @@
 <ul>
     {% for topic in topics %}
         <li>
-            {{ topic }}
+            <a href="{% url 'learning_logs/topic.html' topic.id%}">{{ topic }}</a>
         </li>
     {% empty %}
         <li>No topics to show.</li>
