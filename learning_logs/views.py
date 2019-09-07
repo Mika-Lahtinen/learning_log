@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from .models import Topic
 from django.http import HttpResponseRedirect
-from django.core import reverse
+from django.urls import reverse
 from .forms import TopicForm
 
 # Create your views here.
